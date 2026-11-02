@@ -96,7 +96,7 @@ $year     = date('Y');
 
         <?php if ($prices): ?>
         <section class="prices" aria-labelledby="prices-title">
-            <h2 id="prices-title">Daftar harga</h2>
+            <h2 id="prices-title">Harga Ground Robusta</h2>
             <div class="price-card">
                 <ul class="price-list">
                     <?php foreach ($prices as $row): ?>
