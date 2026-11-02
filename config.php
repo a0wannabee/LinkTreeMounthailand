@@ -39,9 +39,9 @@ return [
         [
             'name'  => 'Roasted Beans',
             'desc'  => 'Biji sangrai utuh',
-            'price' => 'Mulai Rp20.000',
+            'price' => 'Tanya admin',
             'image' => 'assets/img/beans.webp',
-            'url'   => wa_link($wa_number, 'Halo, saya mau pesan Mounthailand Roasted Coffee Beans. Ukuran: '),
+            'url'   => wa_link($wa_number, 'Halo admin, mau tanya harga Roasted Beans Mounthailand. Ukuran: '),
         ],
     ],
 
