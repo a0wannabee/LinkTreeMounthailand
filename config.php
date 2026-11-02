@@ -77,7 +77,7 @@ return [
             'label' => 'Email',
             'note'  => 'halo.mounthailand@gmail.com',
             'icon'  => 'mail',
-            'url'   => 'mailto:halo.mounthailand@gmail.com',
+            'url'   => 'mailto:mounthailandcoffee@gmail.com',
         ],
     ],
 
