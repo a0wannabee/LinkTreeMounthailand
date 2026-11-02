@@ -14,8 +14,8 @@ function wa_link(string $number, string $text): string
 return [
     'brand' => [
         'name'     => 'Mounthailand Coffee',
-        'tagline'  => 'Robusta Grade 1 dari lereng Temanggung. Disortir tangan, rasa cokelat, asam rendah.',
-        'location' => 'Temanggung, Jawa Tengah',
+        'tagline'  => 'Bermitra dengan petani biji kopi lokal yang sama dengan supplier coffee shop terkemuka di Jogja.',
+        'location' => 'Magelang, Jawa Tengah',
         'logo'     => 'assets/img/logo.webp',
     ],
 
