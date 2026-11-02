@@ -39,10 +39,23 @@ return [
         [
             'name'  => 'Roasted Beans',
             'desc'  => 'Biji sangrai utuh',
-            'price' => 'Tanya harga',
+            'price' => 'Mulai Rp20.000',
             'image' => 'assets/img/beans.webp',
             'url'   => wa_link($wa_number, 'Halo, saya mau pesan Mounthailand Roasted Coffee Beans. Ukuran: '),
         ],
+    ],
+
+    // Daftar harga (berlaku untuk Ground & Beans)
+    'prices' => [
+        ['size' => '100 gr',  'price' => 'Rp20.000'],
+        ['size' => '250 gr',  'price' => 'Rp45.000'],
+        ['size' => '500 gr',  'price' => 'Rp86.000'],
+        ['size' => '1 kg',    'price' => 'Rp155.000'],
+    ],
+    'wholesale' => [
+        'text' => 'Beli grosir minimal 1 kg? Harga khusus, chat admin.',
+        'cta'  => 'Chat admin',
+        'url'  => wa_link($wa_number, 'Halo admin Mounthailand, saya mau tanya harga grosir (minimal 1 kg).'),
     ],
 
     // Link lain
@@ -69,7 +82,7 @@ return [
         ],
         [
             'label' => 'Tanya stok & reseller',
-            'note'  => 'Harga grosir untuk kedai dan reseller',
+            'note'  => 'Harga grosir min. 1 kg, chat admin',
             'icon'  => 'handshake',
             'url'   => wa_link($wa_number, 'Halo Mounthailand, saya mau tanya soal kerja sama reseller / pembelian grosir.'),
         ],

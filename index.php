@@ -35,6 +35,8 @@ $brand    = $config['brand'];
 $primary  = $config['primary'];
 $products = $visible($config['products']);
 $links    = $visible($config['links']);
+$prices   = $config['prices'] ?? [];
+$wholesale = $config['wholesale'] ?? null;
 $socials  = $visible($config['socials']);
 $year     = date('Y');
 ?>
@@ -54,7 +56,7 @@ $year     = date('Y');
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css?v=1">
+    <link rel="stylesheet" href="assets/style.css?v=2">
 </head>
 <body>
     <div class="bg" aria-hidden="true"></div>
@@ -88,6 +90,25 @@ $year     = date('Y');
                     <span class="price"><?= e($p['price']) ?></span>
                 </a>
                 <?php endforeach; ?>
+            </div>
+        </section>
+        <?php endif; ?>
+
+        <?php if ($prices): ?>
+        <section class="prices" aria-labelledby="prices-title">
+            <h2 id="prices-title">Daftar harga</h2>
+            <div class="price-card">
+                <ul class="price-list">
+                    <?php foreach ($prices as $row): ?>
+                    <li><span><?= e($row['size']) ?></span><strong><?= e($row['price']) ?></strong></li>
+                    <?php endforeach; ?>
+                </ul>
+                <?php if ($wholesale): ?>
+                <a class="wholesale" href="<?= e($wholesale['url']) ?>" target="_blank" rel="noopener">
+                    <span><?= e($wholesale['text']) ?></span>
+                    <strong><?= e($wholesale['cta']) ?> <?= icon('arrow') ?></strong>
+                </a>
+                <?php endif; ?>
             </div>
         </section>
         <?php endif; ?>
