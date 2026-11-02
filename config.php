@@ -85,7 +85,7 @@ return [
     'socials' => [
         ['label' => 'Instagram', 'icon' => 'instagram', 'url' => 'https://instagram.com/mounthailand_coffee.tmng'],
         ['label' => 'WhatsApp',  'icon' => 'whatsapp',  'url' => 'https://wa.me/' . $wa_number],
-        ['label' => 'Email',     'icon' => 'mail',      'url' => 'mailto:halo.mounthailand@gmail.com'],
+        ['label' => 'Email',     'icon' => 'mail',      'url' => 'mailto:mounthailandcoffee@gmail.com'],
         ['label' => 'TikTok',    'icon' => 'tiktok',    'url' => ''], // isi kalau ada
     ],
 ];
