@@ -18,6 +18,8 @@ vercel.json      konfigurasi deploy Vercel
 
 Buka `config.php`. Link dengan `'url' => ''` otomatis disembunyikan, jadi Shopee, Tokopedia, atau TikTok tinggal diisi URL-nya kalau sudah ada.
 
+Daftar harga ada di `'prices'`, info grosir di `'wholesale'`.
+
 Yang perlu diisi dulu: **URL website** di bagian `'Website resmi'`.
 
 ## Jalankan lokal
